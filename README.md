@@ -1,0 +1,2 @@
+# ttstranger
+ Chat anonima
