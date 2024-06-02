@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="https://minotar.net/avatar/Gam3nd/52" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+		<title>Talk To Stranger</title>
+		<style>
+			* {
+				font-family: 'Poppins';
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			#chat-container {
+				display: flex;
+				flex-direction: column;
+				margin: 0 auto;
+				justify-content: space-between;
+			}
+
+			@media only screen and (min-width: 600px) {
+				#chat-container {
+					width: 500px;
+					height: 100vh;
+				}
+
+				.box-user-click {
+					margin-bottom: 20px !important;
+				}
+			}
+
+			@media only screen and (max-width: 599px) {
+				#chat-container {
+					width: 100%;
+					height: 90vh;
+				}
+			}
+
+			#chatMessages {
+				flex: 1;
+				height: 300px;
+				overflow-y: scroll;
+				overflow: auto;
+				margin-bottom: 10px;
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.message {
+				margin: 5px 0;
+				padding: 10px;
+				border-radius: 10px;
+				max-width: 70%;
+				word-wrap: break-word;
+				font-size: 14px;
+			}
+
+			.sent {
+				align-self: flex-end;
+				background-color: #dcf8c6;
+			}
+
+			.received {
+				align-self: flex-start;
+				background-color: #f1f0f0;
+			}
+
+			.alert-yellow {
+				font-size: 12px;
+				background-color: #f4f8c6;
+				align-self: center;
+				padding: 5px 10px 5px 10px;
+				border-radius: 10px;
+				margin: 5px 0;
+			}
+
+			#messageInput:focus {
+				outline: none;
+			}
+
+			#messageInput {
+				font-size: 12px;
+				height: 20px;
+				resize: none;
+				flex: 1;
+				border-radius: 10px;
+				border: none;
+				background-color: #f1f0f0;
+				padding: 10px;
+				width: 0;
+				white-space: pre-wrap;
+			}
+
+			#sendMessageButton {
+				margin-left: 5px;
+				border: none;
+				border-radius: 10px;
+				padding: 10px;
+				cursor: pointer;
+			}
+
+			#message-form {
+				display: flex;
+				flex-direction: row;
+				justify-content: start;
+				border-radius: 10px;
+			}
+
+			.timestamp {
+				font-size: 10px;
+				color: #888;
+			}
+
+			.blue-button {
+				background-color: #bedeff;
+			}
+
+			#trovaChatButton {
+				margin-bottom: 10px;
+				background-color: #f8c6c6;
+				border-radius: 10px;
+				border: none;
+				padding: 8px 12px 8px 12px;
+			}
+
+			.title {
+				margin-left: 12px;
+			}
+
+			.box-user-click {
+				margin: 0px 12px 0px 12px;
+			}
+
+			/* WebKit (Chrome, Safari) */
+			#chatMessages::-webkit-scrollbar {
+				width: 6px;
+			}
+
+			#chatMessages::-webkit-scrollbar-thumb {
+				background-color: #888;
+				border-radius: 3px;
+			}
+
+			#chatMessages::-moz-scrollbar {
+				width: 6px;
+			}
+
+			#chatMessages::-moz-scrollbar-thumb {
+				background-color: #888;
+				border-radius: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="chat-container">
+			<h3 class="title">TALK TO STRANGER</h3>
+			<div id="chatMessages">
+				<div class="alert-yellow">Clicca "Ricerca chat" <br>per avviare una chat </div>
+			</div>
+			<div class="box-user-click">
+				<button id="trovaChatButton">Ricerca chat</button>
+				<form id="message-form" onsubmit="return false;">
+					<textarea type="text" id="messageInput" placeholder="Type a message..." disabled="" /></textarea>
+					<button id="sendMessageButton" class="blue-button" type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
