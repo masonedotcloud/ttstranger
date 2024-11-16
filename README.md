@@ -79,4 +79,9 @@ Questo progetto è una semplice applicazione di chat in tempo reale utilizzando 
 
 ## Licenza
 
-Questo progetto è concesso in licenza con i termini della licenza MIT. Vedi il file [LICENSE](LICENSE) per i dettagli.
+Questo progetto è distribuito sotto la Licenza MIT - vedi il file [LICENSE](LICENSE) per ulteriori dettagli.
+
+
+## Autore
+
+Questo progetto è stato creato da [alessandromasone](https://github.com/alessandromasone).
