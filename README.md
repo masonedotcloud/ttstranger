@@ -1,4 +1,4 @@
-# README - ttstranger
+# ttstranger
 
 ## Panoramica
 
