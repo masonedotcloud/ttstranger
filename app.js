@@ -66,9 +66,7 @@ function inviaMessaggio(ref, message) {
 }
 
 // Configurazione Firebase
-const firebaseConfig = {
-    databaseURL: "https://ttstranger-6da0c-default-rtdb.europe-west1.firebasedatabase.app"
-};
+const firebaseConfig = {};
 
 // Inizializzazione Firebase
 const firebaseApp = initializeApp(firebaseConfig);
